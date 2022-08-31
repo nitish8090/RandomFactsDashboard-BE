@@ -8,3 +8,4 @@ __pycache__/
 /database.db
 /DB Browser for SQLite/
 /.vscode/
+/gunicorn.conf.py
