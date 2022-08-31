@@ -23,12 +23,13 @@ from .email_module import send_forgot_password_link
 def register():
     email = request.json.get("email")
     password = request.json.get("password")
+    name = request.json.get("name")
 
     user = User.query.filter_by(email=email).first()
     if user:
         return jsonify("User already exists"), 403
 
-    user = User(email=email, password=password)
+    user = User(email=email, password=password, name=name)
     db.session.add(user)
     db.session.commit()
 
