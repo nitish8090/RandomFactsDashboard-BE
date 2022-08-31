@@ -1,0 +1,10 @@
+*.pyc
+venv/
+.idea/
+.idea
+__pycache__/
+**/__pycache__
+
+/database.db
+/DB Browser for SQLite/
+/.vscode/
